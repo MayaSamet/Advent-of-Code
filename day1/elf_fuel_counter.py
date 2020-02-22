@@ -14,13 +14,16 @@ for mass in masses:
 
 # part 2
 
-total_fuel_2 = 0
-ind = 0
+total_fuel_2 = []
 
 for mass in masses:
-    
-    fuel_mass = mass
-    while fuel_mass > 0:
-        fuel_mass = int(fuel_mass/3)-2
-        total_fuel_2 += fuel_mass
+    fuel_req = 0
+    while mass > 0:
+        mass = int(mass/3)-2
+        fuel_req += mass
+    total_fuel_2.append(fuel_req)
+
+print(masses)
+print(total_fuel_2)
+
         
