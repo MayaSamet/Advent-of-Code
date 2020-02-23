@@ -18,12 +18,11 @@ total_fuel_2 = []
 
 for mass in masses:
     fuel_req = 0
-    while mass > 0:
+    while int(mass/3)-2 > 0:
         mass = int(mass/3)-2
         fuel_req += mass
     total_fuel_2.append(fuel_req)
 
-print(masses)
-print(total_fuel_2)
+print(sum(total_fuel_2))
 
         
