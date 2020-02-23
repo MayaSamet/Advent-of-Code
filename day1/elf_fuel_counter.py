@@ -9,8 +9,7 @@ total_fuel = 0
 for mass in masses:
     total_fuel += int(mass/3)-2
 
-# for solution:
-# print(total_fuel)
+print("Day 1 part 1 solution: " + str(total_fuel))
 
 # part 2
 
@@ -23,6 +22,6 @@ for mass in masses:
         fuel_req += mass
     total_fuel_2.append(fuel_req)
 
-print(sum(total_fuel_2))
+print("Day 1 part 2 solution: " + str(sum(total_fuel_2)))
 
         
