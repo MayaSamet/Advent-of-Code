@@ -1,3 +1,5 @@
+# Advent of Code - Day 1
+
 # part 1
 f = open('input.txt', 'r')
 masses = f.readlines()
